@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Trolls vs Zombies</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+<div class="screen screen-start show">
+    <div class="panel">
+        <h1>Trolls vs Zombies</h1>
+        <ul id="instruction">
+            <li>Enter your name and press the start button</li>
+            <li>Go ahead by overcoming the obstacles</li>
+            <li>Destroy the monsters in your path</li>
+            <li>Use the skills to fight monsters</li>
+            <li>Each skill uses MP, but MP regenerates by 5MP/sec</li>
+        </ul>
+        <form>
+            <input id = "inputname" type="text" autocomplete="false" placeholder="Enter your name, Hero!">
+            <input id = "play" type="button" disabled="disabled" value="Next!">
+        </form>
+    </div>
+</div>
+<div id="TROLL"></div>
+<div class="screen screen-game">
+    <div class="game-panel game-panel-user">
+        <div class="user-info">Username</div>
+        <div class="panel-xp">
+            <div class="score-value">
+                <span>100</span>
+            </div>
+        </div>
+        <div class="panel-mp">
+            <div class="score-value">
+                <span>100</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="game-panel game-panel-scores">
+        <div class="timer">Time: 00:00</div>
+        <div class="kills">Killed: 0</div>
+    </div>
+
+    <div class="game-panel game-panel-skills">
+        <img src="assets/img/skill-sword.png" alt="sword">
+        <img src="assets/img/skill-shield.png" alt="shield">
+        <img src="assets/img/skill-sword-3.png" alt="sword 3">
+        <div id ="skill-sword-3">NULL</div>
+        <img src="assets/img/skill-sword-8.png" alt="sword 8">
+        <div id ="skill-sword-8">NULL</div>
+    </div>
+</div>
+<div class="screen screen-ranking">
+    <div class="panel">
+        <h1>Rating of Heroes!</h1>
+        <table>
+            <tbody>
+                <th>
+                    <td>#</td>
+                    <td>Username</td>
+                    <td>Killed mosters</td>
+                    <td>Time</td>
+                </th>
+            </tbody>
+        </table>
+        <button onclick='location.reload()'>Start again!</button>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.4.1.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
